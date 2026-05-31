@@ -1,0 +1,60 @@
+<div class="payment-bg">
+
+  <div class="payment-card">
+
+    <div class="payment-left">
+      <h2>Monto a pagar</h2>
+
+      <div class="amount-box">
+        S/ 14.00
+      </div>
+
+      <div class="info">
+        <p><b>Producto:</b> Carnet Digital</p>
+        <p><b>Universidad:</b> UNAMBA</p>
+        <p><b>Fecha:</b> 20/05/2026</p>
+      </div>
+
+      <div class="logos">
+        <span>💳 VISA</span>
+        <span>💳 Mastercard</span>
+      </div>
+    </div>
+
+    <div class="payment-right">
+
+      <h2>Pagar con Tarjeta</h2>
+
+      <input type="text"
+      placeholder="Número de tarjeta">
+
+      <div class="row">
+        <input type="text"
+        placeholder="MM/YY">
+
+        <input type="text"
+        placeholder="CVV">
+      </div>
+
+      <input type="text"
+      placeholder="Nombre del titular">
+
+      <div class="buttons">
+        <button class="cancelar">
+          Cancelar
+        </button>
+
+        <button class="pagar">
+          Pagar
+        </button>
+
+        <button class="pagar" (click)="confirmarPago()">
+   Confirmar Pago
+</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,40 @@
+<div class="dashboard-bg">
+
+  <div class="dashboard-card">
+
+    <div class="dashboard-icon">🪪</div>
+
+    <h2>Datos del Estudiante</h2>
+
+    <p class="subtitulo">
+      Complete los datos para generar su Carnet Digital
+    </p>
+
+    <input [(ngModel)]="nombre"
+    class="form-control"
+    placeholder="Nombre Completo">
+
+    <input [(ngModel)]="codigo"
+    class="form-control"
+    placeholder="Código Universitario">
+
+    <div class="upload-box">
+      <label>📷 Subir Foto</label>
+      <input type="file"
+      (change)="subirFoto($event,'foto')">
+    </div>
+
+    <div class="upload-box">
+      <label>📊 Subir Código de Barras</label>
+      <input type="file"
+      (change)="subirFoto($event,'barra')">
+    </div>
+
+    <button class="btn-generar"
+    (click)="generarCarnet()">
+      Generar Carnet
+    </button>
+
+  </div>
+
+</div>

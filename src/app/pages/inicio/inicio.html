@@ -1,0 +1,116 @@
+<nav class="navbar">
+  <div class="logo">
+    🎓 CARNET DIGITAL
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#">Inicio</a></li>
+    <li><a (click)="irBeneficios()">Beneficios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+
+  <button routerLink="/login" class="btn-login">
+    Ingresar
+  </button>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Carnet Digital Universitario</h1>
+    <p>
+      Sistema moderno para identificación digital de estudiantes
+      de la Universidad Nacional Micaela Bastidas de Apurímac.
+    </p>
+      
+    <div class="sugerencias-container">
+  <h3>¿Tienes alguna sugerencia o mejora para el Carnet Digital?</h3>
+  <p>Tu opinión nos ayuda a mejorar los servicios estudiantiles.</p>
+  
+  <form (submit)="procesarEnvio($event, sugerenciaInput.value); sugerenciaInput.value = ''">
+    <div class="input-group">
+      
+      <textarea 
+        #sugerenciaInput
+        placeholder="Escribe aquí tu sugerencia o reporte de error..." 
+        rows="3"
+        required>
+      </textarea>
+      
+      <button type="submit" class="btn-enviar">Enviar sugerencia</button>
+    </div>
+  </form>
+</div>
+    </div>
+</section>
+
+<section id="beneficios" class="beneficios">
+  <h2>Beneficios del Carnet Digital</h2>
+  <p>
+    El Carnet Digital Universitario es una solución moderna que permite
+    a los estudiantes identificarse de manera rápida, segura y eficiente
+    desde su dispositivo móvil.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🔒 Seguridad</h3>
+      <p>Evita falsificaciones y mejora el control de acceso mediante código QR.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Rapidez</h3>
+      <p>Permite un ingreso rápido y acceso inmediato a servicios.</p>
+    </div>
+    <div class="card">
+      <h3>💰 Ahorro</h3>
+      <p>Reduce costos de impresión y reposición de carnets físicos.</p>
+    </div>
+  </div>
+
+  <div class="que-es">
+    <div class="que-es-texto">
+      <h3>¿Qué es el Carnet Digital Universitario?</h3>
+      <p>
+        Es una credencial virtual que permite a los estudiantes
+        identificarse de manera rápida, segura y eficiente desde
+        su dispositivo móvil, facilitando el acceso a servicios
+        universarios y modernizando la gestión institucional.
+      </p>
+    </div>
+    <div class="que-es-img">
+      <img src="/fotocarnet.png" alt="Carnet Digital Peruano">
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contacto">
+  <h2>Contáctanos</h2>
+  <p>Estamos para ayudarte con el sistema de Carnet Digital Universitario.</p>
+
+  <div class="contacto-contenido">
+    <div class="info-contacto">
+      <h3>📍 Ubicación</h3>
+      <p>Abancay, Apurímac - Perú</p>
+      <h3>📞 Teléfono</h3>
+      <p>917406272</p>
+      <h3>📧 Email</h3>
+      <p>carnetdigital@unamba.edu.pe</p>
+    </div>
+
+    <div class="redes-sociales">
+      <h3>Síguenos</h3>
+      <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+      <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+      <a href="https://wa.me/51917406272" target="_blank">💬 WhatsApp</a>
+      <a href="https://youtube.com" target="_blank">▶ YouTube</a>
+    </div>
+  </div>
+</section>
+
+<div class="mouse-glow"></div>
+<div class="particles">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>

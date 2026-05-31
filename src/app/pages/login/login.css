@@ -1,0 +1,139 @@
+.login-bg{
+ height:calc(100vh - 56px);
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background: linear-gradient(135deg,#38bdf8,#60a5fa,#93c5fd);
+ position:relative;
+ overflow:hidden;
+}
+
+/* efecto premium fondo */
+.login-bg::before{
+    content:'';
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.2);
+    border-radius:50%;
+    top:10%;
+    left:10%;
+    filter:blur(80px);
+}
+
+.login-bg::after{
+    content:'';
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.15);
+    border-radius:50%;
+    bottom:10%;
+    right:10%;
+    filter:blur(80px);
+}
+
+.login-card{
+ width:400px;
+ background:white;
+ padding:40px;
+ border-radius:25px;
+ text-align:center;
+ box-shadow:0 20px 50px rgba(0,0,0,.3);
+ position:relative;
+ z-index:2;
+}
+
+.input-box{
+ width:100%;
+ padding:15px;
+ margin:10px 0;
+ border-radius:15px;
+ border:1px solid black;
+ outline:none;
+ transition:.3s;
+}
+
+.input-box:focus{
+ border:1px solid #38bdf8;
+ box-shadow:0 0 10px rgba(56,189,248,.5);
+}
+
+.btn-login{
+ width:100%;
+ padding:15px;
+ border:none;
+ border-radius:15px;
+ background:black;
+ color:white;
+ cursor:pointer;
+ transition:.3s;
+}
+
+.btn-login:hover{
+ transform:scale(1.05);
+ background:#1e3a8a;
+}
+
+/* icono */
+.login-icon{
+    font-size:60px;
+    margin-bottom:15px;
+    animation: flotar 3s infinite;
+}
+
+/* subtitulo */
+.subtitle{
+    color:#94a3b8;
+    margin-bottom:25px;
+    font-size:16px;
+}
+
+/* forgot */
+.forgot{
+    display:block;
+    margin-top:20px;
+    color:#38bdf8;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.forgot:hover{
+    color:#1e3a8a;
+}
+
+/* linea */
+.line{
+    margin:25px 0;
+    height:1px;
+    background:rgba(0,0,0,.15);
+}
+
+/* social */
+.social-text{
+    color:black;
+    margin-bottom:15px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    font-size:35px;
+    cursor:pointer;
+}
+
+.social-icons span{
+    transition:.3s;
+}
+
+.social-icons span:hover{
+    transform:scale(1.2);
+}
+
+/* animacion */
+@keyframes flotar{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}

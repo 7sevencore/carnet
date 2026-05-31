@@ -1,0 +1,50 @@
+<nav class="navbar navbar-dark bg-dark">
+ <div class="container">
+ </div>
+</nav>
+
+<div class="login-bg">
+ <div class="login-card">
+
+   <!-- NUEVO -->
+   <div class="login-icon">
+      🔐
+   </div>
+
+   <h1>Login</h1>
+
+   <p class="subtitle">
+      Bienvenido al sistema de Carnet Digital Universitario
+   </p>
+
+   <input [(ngModel)]="usuario"
+   class="input-box"
+   placeholder="Usuario">
+
+   <input [(ngModel)]="password"
+   type="password"
+   class="input-box"
+   placeholder="Contraseña">
+
+   <button class="btn-login"
+   (click)="ingresar()">
+   Ingresar
+   </button>
+
+   <!-- NUEVO -->
+   <a href="#" class="forgot">
+      ¿Olvidaste tu contraseña?
+   </a>
+
+   <div class="line"></div>
+
+   <p class="social-text">Síguenos</p>
+
+   <div class="social-icons">
+      <span>📘</span>
+      <span>📷</span>
+      <span>💬</span>
+   </div>
+
+ </div>
+</div>

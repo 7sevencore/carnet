@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-bg{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#38bdf8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    padding:20px;
+}
+
+/* burbujas */
+.dashboard-bg::before{
+    content:'';
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.1);
+    border-radius:50%;
+    top:10%;
+    left:5%;
+    filter:blur(80px);
+}
+
+.dashboard-bg::after{
+    content:'';
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.1);
+    border-radius:50%;
+    bottom:10%;
+    right:5%;
+    filter:blur(80px);
+}
+
+.dashboard-card{
+    width:550px;
+    max-width:95%;
+    background:rgba(255,255,255,.95);
+    padding:50px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+    backdrop-filter: blur(15px);
+    z-index:2;
+    animation:flotar 4s infinite;
+}
+
+.dashboard-icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+.form-control{
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border-radius:15px;
+    border:1px solid #cbd5e1;
+    font-size:16px;
+}
+
+.upload-box{
+    margin:20px 0;
+    padding:20px;
+    border:2px dashed #38bdf8;
+    border-radius:20px;
+    background:#f8fafc;
+}
+
+.upload-box label{
+    display:block;
+    margin-bottom:10px;
+    color:#1e3a8a;
+    font-weight:bold;
+}
+
+.btn-generar{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:15px;
+    background:#1e3a8a;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-generar:hover{
+    background:#2563eb;
+    transform:scale(1.03);
+}
+
+@keyframes flotar{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
