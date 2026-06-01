@@ -43,7 +43,7 @@ export class InicioComponent {
 
     // Creamos el objeto con tu clave real de Web3Forms
     const payload = {
-      access_key: '2b0db3bc-05a4-4638-9c4d-9ad1d6305605',
+      access_key: '9b79337d-8db8-4f97-b9a6-1951fb29fc9a',
       subject: 'Nueva Sugerencia - Carnet Digital UNAMBA',
       from_name: 'Sistema Carnet Digital',
       sugerencia_estudiante: texto.trim()
